@@ -60,7 +60,21 @@ export default {
       });
     }
 
+        // Serve HTML files
+    if (url.pathname.endsWith('.html')) {
+      const response = await fetch(`${baseURL}${url.pathname}`);
+      const html = await response.text();
+      return new Response(html, {
+        headers: {
+          'Content-Type': 'text/html; charset=UTF-8',
+          'Cache-Control': 'max-age=300'
+        }
+      });
+    }
+
+
     // 404 for all other paths
     return new Response('Not Found', { status: 404 });
   }
 };
+
