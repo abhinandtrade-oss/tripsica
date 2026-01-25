@@ -1,12 +1,18 @@
 export default {
   async fetch(request, env) {
     const url = new URL(request.url);
-
+    
     // GitHub raw URLs for the files
     const baseURL = 'https://raw.githubusercontent.com/abhinandtrade-oss/tripsica/main';
     
+    // Redirect .html URLs to extensionless versions
+    if (url.pathname.endsWith('.html') && url.pathname !== '/index.html') {
+      const newPath = url.pathname.replace(/\.html$/, '');
+      return Response.redirect(new URL(newPath, url.origin).href, 301);
+    }
+    
     // Route handling
-    if (url.pathname === '/') {
+    if (url.pathname === '/' || url.pathname === '/index.html') {
       // Fetch index.html from GitHub
       const response = await fetch(`${baseURL}/index.html`);
       const html = await response.text();
@@ -59,9 +65,8 @@ export default {
         }
       });
     }
-
-
-        // Handle extensionless URLs - try to serve as HTML
+    
+    // Handle extensionless URLs - try to serve as HTML
     if (!url.pathname.includes('.') && url.pathname !== '/') {
       const htmlPath = `${url.pathname}.html`;
       const response = await fetch(`${baseURL}${htmlPath}`);
@@ -75,23 +80,8 @@ export default {
         });
       }
     }
-
-        // Serve HTML files
-    if (url.pathname.endsWith('.html')) {
-      const response = await fetch(`${baseURL}${url.pathname}`);
-      const html = await response.text();
-      return new Response(html, {
-        headers: {
-          'Content-Type': 'text/html; charset=UTF-8',
-          'Cache-Control': 'max-age=300'
-        }
-      });
-    }
-
-
+    
     // 404 for all other paths
     return new Response('Not Found', { status: 404 });
   }
 };
-
-
