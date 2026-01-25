@@ -4,7 +4,7 @@ compatibility_date = "2024-01-01"
 # Updated for Cloudflare Workers auto-deployment
 
 # Enable static assets binding for the Worker
-[as
+
 
 
 
