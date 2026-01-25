@@ -82,6 +82,15 @@ export default {
     }
     
     // 404 for all other paths
-    return new Response('Not Found', { status: 404 });
-  }
+    // 404 - Fetch and display 404.html
+    const response = await fetch(`${baseURL}/404.html`);
+    const html = await response.text();
+    return new Response(html, {
+      status: 404,
+      headers: {
+        'Content-Type': 'text/html; charset=UTF-8',
+        'Cache-Control': 'max-age=300'
+      }
+    });  }
 };
+
