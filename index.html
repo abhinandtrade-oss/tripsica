@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en" class="h-full">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tripsica Tours Travels - Coming Soon</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/_sdk/element_sdk.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&amp;family=Poppins:wght@300;400;500;600&amp;display=swap"
+        rel="stylesheet">
+    <link rel="icon" type="image/jpeg" href="assets/images/logo.jpg">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        @view-transition {
+            navigation: auto;
+        }
+    </style>
+    <script src="js/logo.js" defer></script>
+    <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+</head>
+
+<body class="h-full font-poppins text-gray-900">
+    <div class="h-full w-full bg-white bg-pattern overflow-auto"><!-- Decorative Elements -->
+        <div class="absolute top-10 left-10 animate-float decorative-plane hidden md:block">
+            <svg width="60" height="60" viewbox="0 0 24 24" fill="currentColor">
+                <path
+                    d="M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L13 19v-5.5l8 2.5z" />
+            </svg>
+        </div>
+        <div class="absolute top-32 right-16 animate-float-delayed decorative-plane hidden md:block">
+            <svg width="40" height="40" viewbox="0 0 24 24" fill="currentColor">
+                <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z" />
+            </svg>
+        </div>
+        <div class="absolute bottom-20 left-20 animate-float decorative-plane hidden md:block"
+            style="animation-delay: 1s;">
+            <svg width="50" height="50" viewbox="0 0 24 24" fill="currentColor">
+                <path
+                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+            </svg>
+        </div>
+        <div class="absolute bottom-32 right-24 animate-float-delayed decorative-plane hidden md:block">
+            <svg width="35" height="35" viewbox="0 0 24 24" fill="currentColor">
+                <path
+                    d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z" />
+            </svg>
+        </div><!-- Main Content -->
+        <div class="min-h-full flex flex-col items-center justify-center px-4 py-12 relative z-10"><!-- Logo -->
+            <div class="animate-slide-up opacity-0 delay-100">
+                <tripsica-logo></tripsica-logo>
+            </div><!-- Agency Name -->
+            <h1 id="agency-name"
+                class="font-playfair text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 text-center mb-4 md:mb-6 animate-slide-up opacity-0 delay-200 px-2 uppercase tracking-tight">
+                TRIPSICA TOURS TRAVELS</h1><!-- Tagline -->
+            <p id="tagline"
+                class="text-red-600 font-semibold text-base sm:text-lg md:text-xl tracking-[0.2em] md:tracking-[0.3em] uppercase mb-10 md:mb-12 animate-slide-up opacity-0 delay-300 text-center">
+                Your Journey Begins Here</p><!-- Coming Soon Badge -->
+            <div class="animate-slide-up opacity-0 delay-400">
+                <div
+                    class="inline-flex items-center gap-2 bg-red-50 border-2 border-red-200 rounded-full px-6 py-3 mb-6">
+                    <span class="w-2 h-2 bg-red-500 rounded-full animate-pulse"></span> <span id="coming-soon-text"
+                        class="text-red-700 font-semibold text-sm md:text-base tracking-wide"> COMING SOON </span>
+                </div>
+            </div><!-- Description -->
+            <!-- Services -->
+            <div class="animate-slide-up opacity-0 delay-500 mb-10 md:mb-12 overflow-hidden w-full max-w-2xl px-2">
+                <div
+                    class="flex flex-wrap justify-center gap-3 md:gap-4 text-gray-700 font-semibold text-xs sm:text-sm md:text-base">
+                    <span class="px-3 py-2 md:px-4 md:py-2 bg-red-50 rounded-lg border border-red-100 shadow-sm">Flight
+                        Deals</span>
+                    <span class="px-3 py-2 md:px-4 md:py-2 bg-red-50 rounded-lg border border-red-100 shadow-sm">Holiday
+                        Packages</span>
+                    <span class="px-3 py-2 md:px-4 md:py-2 bg-red-50 rounded-lg border border-red-100 shadow-sm">Hotels
+                        & Resorts</span>
+                </div>
+                <p class="text-center mt-6 text-gray-400 font-semibold text-xs md:text-sm tracking-[0.15em] uppercase">
+                    India & International Trips</p>
+            </div>
+
+            <!-- Why Tripsica Section -->
+            <div class="animate-slide-up opacity-0 delay-600 mb-12 w-full max-w-4xl px-4">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                    <div
+                        class="bg-white/50 backdrop-blur-sm rounded-2xl p-6 border border-red-50 text-center hover:shadow-lg transition-all duration-300">
+                        <div
+                            class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center text-red-600 mx-auto mb-4">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <h3 class="font-bold text-gray-900 mb-2">24/7 Support</h3>
+                        <p class="text-sm text-gray-600">Round-the-clock assistance for all your travel needs and
+                            queries.</p>
+                    </div>
+                    <div
+                        class="bg-white/50 backdrop-blur-sm rounded-2xl p-6 border border-red-50 text-center hover:shadow-lg transition-all duration-300">
+                        <div
+                            class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center text-red-600 mx-auto mb-4">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="font-bold text-gray-900 mb-2">Verified Guides</h3>
+                        <p class="text-sm text-gray-600">Expert local guides to make your journey safe and insightful.
+                        </p>
+                    </div>
+                    <div
+                        class="bg-white/50 backdrop-blur-sm rounded-2xl p-6 border border-red-50 text-center hover:shadow-lg transition-all duration-300">
+                        <div
+                            class="w-12 h-12 bg-red-100 rounded-full flex items-center justify-center text-red-600 mx-auto mb-4">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M14.121 15.536c-1.171 1.952-3.07 1.952-4.242 0-1.172-1.953-1.172-5.119 0-7.072 1.171-1.952 3.07-1.952 4.242 0M8 10.5h4m-4 3h4m9-1.5a9 9 0 11-18 0 9 9 0 0118 0z">
+                                </path>
+                            </svg>
+                        </div>
+                        <h3 class="font-bold text-gray-900 mb-2">Best Pricing</h3>
+                        <p class="text-sm text-gray-600">Unbeatable deals on flights and stays without compromising
+                            quality.</p>
+                    </div>
+                </div>
+            </div><!-- Social Links -->
+            <div class="flex items-center gap-6 mt-10 animate-fade-in opacity-0 delay-600"> <a
+                    href="https://www.instagram.com/tripsica_tours_travels/" target="_blank"
+                    class="w-12 h-12 rounded-full bg-red-50 flex items-center justify-center text-red-600 hover:bg-red-100 hover:scale-110 transition-all duration-300"
+                    aria-label="Instagram">
+                    <svg class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24">
+                        <path
+                            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zM12 0C8.741 0 8.333.014 7.053.072 2.695.272.273 2.69.073 7.052.014 8.333 0 8.741 0 12c0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98C8.333 23.986 8.741 24 12 24c3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98C15.668.014 15.259 0 12 0zm0 5.838a6.162 6.162 0 100 12.324 6.162 6.162 0 000-12.324zM12 16a4 4 0 110-8 4 4 0 010 8zm6.406-11.845a1.44 1.44 0 100 2.881 1.44 1.44 0 000-2.881z" />
+                    </svg></a> <a href="https://wa.me/919496555886" target="_blank"
+                    class="w-12 h-12 rounded-full bg-red-50 flex items-center justify-center text-red-600 hover:bg-red-100 hover:scale-110 transition-all duration-300"
+                    aria-label="WhatsApp">
+                    <svg class="w-5 h-5" fill="currentColor" viewbox="0 0 24 24">
+                        <path
+                            d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+                    </svg></a>
+            </div><!-- Footer -->
+            <footer class="mt-16 md:mt-20 text-center animate-fade-in opacity-0" style="animation-delay: 0.8s;">
+                <p class="text-gray-400 text-[10px] md:text-xs uppercase tracking-widest">Powered by <a
+                        href="https://www.gridify.in" target="_blank" rel="noopener noreferrer"
+                        class="text-red-500 hover:text-red-600 font-bold transition-colors">GRIDIFY</a></p>
+                <p class="text-gray-300 text-[10px] mt-3 tracking-wider">© 2025 Tripsica Tours Travels. All rights
+                    reserved.</p>
+            </footer>
+        </div>
+    </div>
+    <script>
+        const defaultConfig = {
+            agency_name: "TRIPSICA TOURS TRAVELS",
+            tagline: "Your Journey Begins Here",
+            coming_soon_text: "COMING SOON",
+            description: "We're crafting extraordinary travel experiences just for you. Get ready to explore breathtaking destinations with personalized service and unforgettable memories.",
+
+            primary_color: "#dc2626",
+            background_color: "#ffffff",
+            text_color: "#111827",
+            secondary_color: "#fef2f2",
+            accent_color: "#b91c1c",
+            font_family: "Poppins",
+            font_size: 16
+        };
+
+        let config = { ...defaultConfig };
+
+        async function onConfigChange(newConfig) {
+            config = { ...config, ...newConfig };
+
+            const agencyName = document.getElementById('agency-name');
+            const tagline = document.getElementById('tagline');
+            const comingSoonText = document.getElementById('coming-soon-text');
+            const description = document.getElementById('description');
+
+
+            if (agencyName) agencyName.textContent = config.agency_name || defaultConfig.agency_name;
+            if (tagline) tagline.textContent = config.tagline || defaultConfig.tagline;
+            if (comingSoonText) comingSoonText.textContent = config.coming_soon_text || defaultConfig.coming_soon_text;
+            if (description) description.textContent = config.description || defaultConfig.description;
+
+
+            // Apply font
+            const fontFamily = config.font_family || defaultConfig.font_family;
+            document.body.style.fontFamily = `${fontFamily}, Poppins, sans-serif`;
+
+            // Apply font size scaling
+            const baseSize = config.font_size || defaultConfig.font_size;
+            if (agencyName) agencyName.style.fontSize = `${baseSize * 2.5}px`;
+            if (tagline) tagline.style.fontSize = `${baseSize * 1.2}px`;
+            if (description) description.style.fontSize = `${baseSize}px`;
+
+            // Apply colors
+            const primaryColor = config.primary_color || defaultConfig.primary_color;
+            const bgColor = config.background_color || defaultConfig.background_color;
+            const textColor = config.text_color || defaultConfig.text_color;
+
+            document.body.querySelector('.bg-white').style.backgroundColor = bgColor;
+            if (agencyName) agencyName.style.color = textColor;
+            if (tagline) tagline.style.color = primaryColor;
+
+        }
+
+        function mapToCapabilities(cfg) {
+            return {
+                recolorables: [
+                    {
+                        get: () => cfg.background_color || defaultConfig.background_color,
+                        set: (value) => { cfg.background_color = value; window.elementSdk.setConfig({ background_color: value }); }
+                    },
+                    {
+                        get: () => cfg.secondary_color || defaultConfig.secondary_color,
+                        set: (value) => { cfg.secondary_color = value; window.elementSdk.setConfig({ secondary_color: value }); }
+                    },
+                    {
+                        get: () => cfg.text_color || defaultConfig.text_color,
+                        set: (value) => { cfg.text_color = value; window.elementSdk.setConfig({ text_color: value }); }
+                    },
+                    {
+                        get: () => cfg.primary_color || defaultConfig.primary_color,
+                        set: (value) => { cfg.primary_color = value; window.elementSdk.setConfig({ primary_color: value }); }
+                    },
+                    {
+                        get: () => cfg.accent_color || defaultConfig.accent_color,
+                        set: (value) => { cfg.accent_color = value; window.elementSdk.setConfig({ accent_color: value }); }
+                    }
+                ],
+                borderables: [],
+                fontEditable: {
+                    get: () => cfg.font_family || defaultConfig.font_family,
+                    set: (value) => { cfg.font_family = value; window.elementSdk.setConfig({ font_family: value }); }
+                },
+                fontSizeable: {
+                    get: () => cfg.font_size || defaultConfig.font_size,
+                    set: (value) => { cfg.font_size = value; window.elementSdk.setConfig({ font_size: value }); }
+                }
+            };
+        }
+
+        function mapToEditPanelValues(cfg) {
+            return new Map([
+                ["agency_name", cfg.agency_name || defaultConfig.agency_name],
+                ["tagline", cfg.tagline || defaultConfig.tagline],
+                ["coming_soon_text", cfg.coming_soon_text || defaultConfig.coming_soon_text],
+                ["description", cfg.description || defaultConfig.description],
+
+            ]);
+        }
+
+
+
+
+
+        // Initialize SDK
+        if (window.elementSdk) {
+            window.elementSdk.init({
+                defaultConfig,
+                onConfigChange,
+                mapToCapabilities,
+                mapToEditPanelValues
+            });
+        }
+    </script>
+    <script>(function () { function c() { var b = a.contentDocument || a.contentWindow.document; if (b) { var d = b.createElement('script'); d.innerHTML = "window.__CF$cv$params={r:'9c35c873a3c779f4',t:'MTc2OTMyMzI2Ny4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);"; b.getElementsByTagName('head')[0].appendChild(d) } } if (document.body) { var a = document.createElement('iframe'); a.height = 1; a.width = 1; a.style.position = 'absolute'; a.style.top = 0; a.style.left = 0; a.style.border = 'none'; a.style.visibility = 'hidden'; document.body.appendChild(a); if ('loading' !== document.readyState) c(); else if (window.addEventListener) document.addEventListener('DOMContentLoaded', c); else { var e = document.onreadystatechange || function () { }; document.onreadystatechange = function (b) { e(b); 'loading' !== document.readyState && (document.onreadystatechange = e, c()) } } } })();</script>
+</body>
+
+</html>

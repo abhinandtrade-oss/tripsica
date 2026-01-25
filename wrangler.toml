@@ -1,0 +1,19 @@
+name = "tripsica-tours-travels"
+main = "src/index.js"
+compatibility_date = "2024-01-01"
+
+# Enable static assets binding for the Worker
+[assets]
+directory = "./"
+binding = "ASSETS"
+
+# Exclude unnecessary files from being uploaded as assets
+[assets.exclude]
+patterns = [
+  "node_modules/**",
+  "src/**",
+  "wrangler.toml",
+  "package*.json",
+  "README.md",
+  ".git/**"
+]
