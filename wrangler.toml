@@ -5,8 +5,7 @@ compatibility_date = "2024-01-01"
 
 # Enable static assets binding for the Worker
 [assets]
-directory = "assets"
-binding = "ASSETS"
+directory = "."
 
 # Exclude unnecessary files from being uploaded as assets
 [assets.exclude]
@@ -18,5 +17,6 @@ patterns = [
   "README.md",
   ".git/**"
 ]
+
 
 
