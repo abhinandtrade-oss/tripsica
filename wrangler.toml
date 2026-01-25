@@ -1,11 +1,11 @@
-name = "tripsica-tours-travels"
+name = "tripsica"
 main = "src/index.js"
 compatibility_date = "2024-01-01"
 # Updated for Cloudflare Workers auto-deployment
 
 # Enable static assets binding for the Worker
 [assets]
-directory = "./"
+directory = "assets"
 binding = "ASSETS"
 
 # Exclude unnecessary files from being uploaded as assets
@@ -18,4 +18,5 @@ patterns = [
   "README.md",
   ".git/**"
 ]
+
 
