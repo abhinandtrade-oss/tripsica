@@ -60,6 +60,22 @@ export default {
       });
     }
 
+
+        // Handle extensionless URLs - try to serve as HTML
+    if (!url.pathname.includes('.') && url.pathname !== '/') {
+      const htmlPath = `${url.pathname}.html`;
+      const response = await fetch(`${baseURL}${htmlPath}`);
+      if (response.ok) {
+        const html = await response.text();
+        return new Response(html, {
+          headers: {
+            'Content-Type': 'text/html; charset=UTF-8',
+            'Cache-Control': 'max-age=300'
+          }
+        });
+      }
+    }
+
         // Serve HTML files
     if (url.pathname.endsWith('.html')) {
       const response = await fetch(`${baseURL}${url.pathname}`);
@@ -77,4 +93,5 @@ export default {
     return new Response('Not Found', { status: 404 });
   }
 };
+
 
